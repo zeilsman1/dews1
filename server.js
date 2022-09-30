@@ -18,5 +18,5 @@ app.use('/static',express.static(path.join(__dirname,'/static')))
 io.on("connection", (socket) => {
   // ...
 });
-
-httpServer.listen(process.env.port);
+console.log(process.env.PORT);
+httpServer.listen(process.env.PORT);
